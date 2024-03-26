@@ -1,0 +1,12 @@
+.rotating-element {
+    animation: rotate 3s linear infinite; /* Время анимации 3 секунды, линейное изменение, повторять бесконечно */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Начальный угол поворота 0 градусов */
+    }
+    to {
+        transform: rotate(360deg); /* Конечный угол поворота 360 градусов */
+    }
+}

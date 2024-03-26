@@ -27,3 +27,11 @@
     letter-spacing: 0.84px;
     text-transform: uppercase;
 }
+h1{
+    font-variation-settings: "ital" 0, "wdth" 112.5;
+    font-weight: normal;
+}
+h2{
+    font-variation-settings: "ital" 0, "wdth" 112.5;
+    font-weight: normal;
+}

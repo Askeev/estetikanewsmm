@@ -1,0 +1,12 @@
+.slick-track {
+    /* Ваши пользовательские стили */
+    display: flex;
+    align-items: center/* Пример: фон .slick-track */
+}
+.owl-carousel .owl-item img {
+    width: 90%;
+    height: auto; /* Поддержка соотношения сторон */
+}
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #10203A; /* Цвет активной точки */
+}
