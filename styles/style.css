@@ -1,6 +1,18 @@
 .rotating-element {
     animation: rotate 3s linear infinite; /* Время анимации 3 секунды, линейное изменение, повторять бесконечно */
 }
+#loaderLine{
+    width: 0;
+    transition: width 3s linear;
+}
+#loader{
+    transition: opacity 1s ease;
+}
+#content {
+    transition: all ease 1s;
+    opacity: 0;
+}
+
 
 @keyframes rotate {
     from {
