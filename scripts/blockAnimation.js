@@ -5,7 +5,11 @@ document.addEventListener('DOMContentLoaded', function(){
     let fourth = document.getElementById('fourthAnimated');
     let fifth = document.getElementById('fifthAnimated');
     let greenMark = document.getElementById('greenAnimated');
-    
+    var myVideo = document.getElementById("video1");
+    if (myVideo) {
+        myVideo.muted = true; // Извините, аудиофилы, но видео нужно замутить для обеспечения автозапуска!
+        myVideo.play();
+    }
 
     
     
