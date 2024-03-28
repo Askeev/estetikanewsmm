@@ -6,9 +6,19 @@ document.addEventListener('DOMContentLoaded', function(){
     let fifth = document.getElementById('fifthAnimated');
     let greenMark = document.getElementById('greenAnimated');
     var myVideo = document.getElementById("video1");
+    var myVideo2 = document.getElementById("video2");
+    var myVideo3 = document.getElementById("video3");
+    var myVideo4 = document.getElementById("video4");
+    var myVideo5 = document.getElementById("video5");
+    var myVideo6 = document.getElementById("video6");
     if (myVideo) {
         myVideo.muted = true; // Извините, аудиофилы, но видео нужно замутить для обеспечения автозапуска!
         myVideo.play();
+        myVideo2.play();
+        myVideo3.play();
+        myVideo4.play();
+        myVideo5.play();
+        myVideo6.play();
     }
 
     
