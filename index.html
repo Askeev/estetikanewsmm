@@ -18,6 +18,21 @@
 
 </head>
 <body class="flex flex-col text-[#10203A]">
+<div id="modal" class="hidden fixed top-0 left-0 right-0 bottom-0 bg-[#00000080] z-50 flex-col justify-end">
+    <div id="modalDialog" class="bg-white h-0 w-full rounded-t-[8px] flex flex-col px-4 py-5">
+        <div class="self-end flex justify-end">
+            <svg id="closeModal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.35653 4.35662C4.71191 4.00124 5.28809 4.00124 5.64346 4.35662L10 8.71315L14.3565 4.35662C14.7119 4.00124 15.2881 4.00124 15.6435 4.35662C15.9988 4.712 15.9988 5.28818 15.6435 5.64356L11.2869 10.0001L15.6435 14.3566C15.9988 14.712 15.9988 15.2882 15.6435 15.6436C15.2881 15.9989 14.7119 15.9989 14.3565 15.6436L10 11.287L5.64346 15.6436C5.28809 15.9989 4.71191 15.9989 4.35653 15.6436C4.00115 15.2882 4.00115 14.712 4.35653 14.3566L8.71306 10.0001L4.35653 5.64356C4.00115 5.28818 4.00115 4.712 4.35653 4.35662Z" fill="#10203A"/>
+            </svg>
+        </div>
+        <h1 class="aenikPro text-[22px] text-center mt-6 uppercase">Оставить заявку</h1>
+        <p class="jbMono text-[12px] uppercase opacity-50 text-center mt-[28px]">Мы перезвоним вам в самое ближайшее время, чтобы обсудить подробности вашего заказа.</p>
+        <input type="text" class="border-[1px] rounded-lg px-4 py-1 aenikPro text-[15px] mt-6" placeholder="+7 (   )">
+        <button class="mt-6 bg-[#BEFF54] flex justify-center items-center rounded-[10px] py-[9px] px-[14px]">
+            <p class="cofo text-[12px] uppercase">отправить</p>
+        </button>
+    </div>
+</div>
 <div id="loader" class="fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-between px-4 py-6">
     <div></div>
     <div class="flex justify-center jbMono text-[60px]">
@@ -42,7 +57,7 @@
             </svg>
         </div>
         <div class="flex items-center">
-            <button class="px-4">
+            <a href="https://wa.me/77066488777" class="px-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <g clip-path="url(#clip0_56_1169)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0841667 9.91095C0.0883333 1.17262 10.6925 -3.31988 17.1 2.87428L17.0875 2.90678C18.9667 4.77845 20 7.26928 20 9.91595C19.9967 17.4568 11.8667 22.1818 5.27917 18.6235L0 20.0001L1.41333 14.8651C0.541667 13.361 0.0841667 11.6576 0.0841667 9.91095ZM5.825 16.9751C11.3475 20.2218 18.33 16.2493 18.335 9.88845C18.338 8.80519 18.1251 7.73218 17.7089 6.73207C17.2927 5.73195 16.6815 4.82476 15.9108 4.06345C15.1444 3.29246 14.2326 2.68114 13.2283 2.26489C12.224 1.84864 11.1471 1.63572 10.06 1.63845C3.55 1.63845 -0.398334 8.78845 3.03833 14.2593L3.2375 14.5718L2.4 17.6093L5.525 16.7968L5.825 16.9751ZM14.5817 11.9851L14.5892 11.9226C14.6159 11.9347 14.6417 11.9461 14.6665 11.9572C14.873 12.0491 15.0091 12.1097 15.0642 12.2101C15.1267 12.3226 15.1267 12.8101 14.9142 13.3976C14.7067 13.9851 13.7125 14.5101 13.2342 14.586C12.805 14.6476 12.2625 14.6743 11.6675 14.4851C9.46416 13.7285 8.25916 13.1835 5.99749 10.2235C4.84666 8.60179 4.50749 7.07679 5.85249 5.59845C6.16166 5.27679 6.51249 5.27012 6.99249 5.31179C7.00764 5.31179 7.02328 5.31119 7.03936 5.31058C7.18704 5.30496 7.37214 5.29792 7.55249 5.73679C7.64384 5.95091 7.79078 6.30665 7.93227 6.6492C8.11347 7.08789 8.28573 7.50493 8.32083 7.57512C8.38249 7.69929 8.42499 7.83679 8.34166 8.01179C8.14564 8.38274 7.94148 8.60799 7.78916 8.77604C7.58015 9.00664 7.46875 9.12954 7.60999 9.37345C7.75666 9.62345 8.25333 10.436 8.99333 11.0985C9.78843 11.8099 10.4802 12.1097 10.8312 12.2619C10.8996 12.2915 10.9551 12.3156 10.9958 12.336C11.2433 12.4485 11.3883 12.436 11.5342 12.2735C11.6783 12.1085 12.1567 11.551 12.3208 11.3051C12.5452 10.9686 12.7291 11.0604 14.3085 11.8488C14.3953 11.8922 14.4862 11.9376 14.5817 11.9851Z" fill="#10203A"/>
@@ -53,7 +68,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-            </button>
+            </a>
             <button class="px-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.52 3.78001C6.48097 3.78001 7.26 4.55903 7.26 5.52001C7.26 6.48099 6.48097 7.26001 5.52 7.26001C4.55902 7.26001 3.78 6.48099 3.78 5.52001C3.78 4.55903 4.55902 3.78001 5.52 3.78001Z" fill="#10203A"/>
@@ -77,7 +92,7 @@
             <!-- Если браузер не поддерживает HTML5 video -->
             Your browser does not support the video tag.
         </video>
-        <button class="absolute right-5 bottom-5 flex items-center gap-[10px] bg-white rounded-[8px] py-2 px-3">
+        <button id="openModalButton1" class="absolute right-5 bottom-5 flex items-center gap-[10px] bg-white rounded-[8px] py-2 px-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                 <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#10203A"/>
             </svg>
@@ -161,7 +176,7 @@
             </div>
             
         </div>
-        <button class="mt-7 bg-[#BEFF54] flex justify-between items-center rounded-[10px] py-[9px] px-[14px]">
+        <button id="openModalButton2" class="mt-7 bg-[#BEFF54] flex justify-between items-center rounded-[10px] py-[9px] px-[14px]">
             <p class="cofo text-[12px] uppercase">Получить заявки</p>
             <div class="bg-[#10203A] p-[6px] rounded-[8px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
@@ -512,7 +527,7 @@
             </div>
             <div class="flex justify-between items-center">
                 <p class="text-white text-base aenikPro">до 2 000 заявок в месяц <br>по цене от $0.8 за заявку</p>
-                <button class="bg-[#BEFF54] p-[6px] rounded-[8px]">
+                <button id="openModalButton3" class="bg-[#BEFF54] p-[6px] rounded-[8px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.46003 10.0173C9.46003 9.51472 9.87764 9.1073 10.3928 9.1073L18.8486 9.1073C19.3637 9.1073 19.7813 9.51472 19.7813 10.0173V18.2669C19.7813 18.7695 19.3637 19.1769 18.8486 19.1769C18.3335 19.1769 17.9158 18.7695 17.9158 18.2669L17.9158 12.2142L11.0523 18.9103C10.6881 19.2657 10.0975 19.2657 9.73323 18.9103C9.36897 18.555 9.36896 17.9788 9.73323 17.6234L16.5967 10.9273L10.3928 10.9273C9.87764 10.9273 9.46003 10.5199 9.46003 10.0173Z" fill="#181F29"/>
                     </svg>
@@ -698,7 +713,7 @@
             </div>
             <div class="flex justify-between items-center">
                 <p class="text-white text-base aenikPro">сделаем анализ и <br>выявим уязвимые места <br>вашей рекламной <br>стратегии </p>
-                <button class="bg-[#BEFF54] p-[6px] rounded-[8px] self-start">
+                <button id="openModalButton4" class="bg-[#BEFF54] p-[6px] rounded-[8px] self-start">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.46003 10.0173C9.46003 9.51472 9.87764 9.1073 10.3928 9.1073L18.8486 9.1073C19.3637 9.1073 19.7813 9.51472 19.7813 10.0173V18.2669C19.7813 18.7695 19.3637 19.1769 18.8486 19.1769C18.3335 19.1769 17.9158 18.7695 17.9158 18.2669L17.9158 12.2142L11.0523 18.9103C10.6881 19.2657 10.0975 19.2657 9.73323 18.9103C9.36897 18.555 9.36896 17.9788 9.73323 17.6234L16.5967 10.9273L10.3928 10.9273C9.87764 10.9273 9.46003 10.5199 9.46003 10.0173Z" fill="#181F29"/>
                     </svg>
@@ -762,7 +777,7 @@
                 <h2 class="aenikPro text-[22px]">300 000 ₸ / месяц</h2>
                 <p class="jbMono text-[11px] uppercase opacity-50">стоимость пакета</p>
             </div>
-            <button class="bg-[#BEFF54] rounded-[8px] p-[6px]">
+            <button id="openModalButton5" class="bg-[#BEFF54] rounded-[8px] p-[6px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.46003 10.0173C9.46003 9.51472 9.87764 9.1073 10.3928 9.1073L18.8486 9.1073C19.3637 9.1073 19.7813 9.51472 19.7813 10.0173V18.2669C19.7813 18.7695 19.3637 19.1769 18.8486 19.1769C18.3335 19.1769 17.9158 18.7695 17.9158 18.2669L17.9158 12.2142L11.0523 18.9103C10.6881 19.2657 10.0975 19.2657 9.73323 18.9103C9.36897 18.555 9.36896 17.9788 9.73323 17.6234L16.5967 10.9273L10.3928 10.9273C9.87764 10.9273 9.46003 10.5199 9.46003 10.0173Z" fill="#181F29"/>
                 </svg>
@@ -797,7 +812,7 @@
                 <p class="jbMono text-[11px] uppercase mt-1">Видеограф</p>
             </div>
         </div>
-        <button class="mx-4 mt-7 bg-[#BEFF54] flex justify-between items-center rounded-[10px] py-[9px] px-[14px]">
+        <button id="openModalButton6" class="mx-4 mt-7 bg-[#BEFF54] flex justify-between items-center rounded-[10px] py-[9px] px-[14px]">
             <p class="cofo text-[12px] uppercase">Хочу команду в проект</p>
             <div class="bg-[#10203A] p-[6px] rounded-[8px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
@@ -815,7 +830,7 @@
             </div>
             <div class="flex justify-between items-center">
                 <p class="text-white text-base aenikPro">мы подробно <br>проконсультируем вас по <br>любым вопросам</p>
-                <button class="bg-[#BEFF54] p-[6px] rounded-[8px] self-start">
+                <button id="openModalButton7" class="bg-[#BEFF54] p-[6px] rounded-[8px] self-start">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.46003 10.0173C9.46003 9.51472 9.87764 9.1073 10.3928 9.1073L18.8486 9.1073C19.3637 9.1073 19.7813 9.51472 19.7813 10.0173V18.2669C19.7813 18.7695 19.3637 19.1769 18.8486 19.1769C18.3335 19.1769 17.9158 18.7695 17.9158 18.2669L17.9158 12.2142L11.0523 18.9103C10.6881 19.2657 10.0975 19.2657 9.73323 18.9103C9.36897 18.555 9.36896 17.9788 9.73323 17.6234L16.5967 10.9273L10.3928 10.9273C9.87764 10.9273 9.46003 10.5199 9.46003 10.0173Z" fill="#181F29"/>
                     </svg>
@@ -841,23 +856,26 @@
             </div>
             <p class="text-[20px] aenikPro">hello@estetika.kz</p>
             <div class="flex gap-3">
-                <button class=" flex items-center gap-3 justify-center cofo uppercase text-[10px] py-3 px-4 border-[1px] rounded-[8px]">
+                <a href="https://wa.me/77066488777" class=" flex items-center gap-3 justify-center cofo uppercase text-[10px] py-3 px-4 border-[1px] rounded-[8px]">
                     whatsapp
                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                         <path d="M2.42 0.120117H9.86V7.54012L8.3 9.06012L8.36 2.54012L1.02 9.88012L0 8.86012L7.36 1.50012L0.92 1.56012L2.42 0.120117Z" fill="#1C1C29"/>
                     </svg>
-                </button>
-                <button class=" flex items-center gap-3 justify-center cofo uppercase text-[10px] py-3 px-4 border-[1px] rounded-[8px]">
+                </a>
+                <a href="https://www.instagram.com/estetika.marketing?igsh=YWg3ZTg0MjF1MG56" class=" flex items-center gap-3 justify-center cofo uppercase text-[10px] py-3 px-4 border-[1px] rounded-[8px]">
                     instagram
                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                         <path d="M2.42 0.120117H9.86V7.54012L8.3 9.06012L8.36 2.54012L1.02 9.88012L0 8.86012L7.36 1.50012L0.92 1.56012L2.42 0.120117Z" fill="#1C1C29"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </div>
     <p class="my-6 jbMono text-[11px] uppercase mx-4">Estetika FCM Agency © 2024</p>
 
+
+
+    <script src="./scripts/modal.js"></script>
     <script src="./scripts/blockAnimation.js"></script>
     <script src="./scripts/loader.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

@@ -54,3 +54,8 @@
 .owl-dots{
     margin-top: 32px;
 }
+
+
+#modalDialog{
+    transition: all ease 0.5s;
+}
