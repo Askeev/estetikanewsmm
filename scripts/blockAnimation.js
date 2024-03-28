@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', function(){
     let fifth = document.getElementById('fifthAnimated');
     let greenMark = document.getElementById('greenAnimated');
     
-    var video = document.getElementById('video');
-    video.play();
 
     
     
