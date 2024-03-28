@@ -51,3 +51,6 @@
     left: -100%;
     transition: all ease 0.5s;
 }
+.owl-dots{
+    margin-top: 32px;
+}

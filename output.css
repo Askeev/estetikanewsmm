@@ -651,6 +651,10 @@ video {
   margin-top: 34px;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -803,6 +807,10 @@ video {
   border-radius: 8px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -853,6 +861,15 @@ video {
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#1EA782\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 167 130 / var(--tw-bg-opacity));
 }
 
 .p-\[12px\] {
