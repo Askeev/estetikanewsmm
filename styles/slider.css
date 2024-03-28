@@ -10,3 +10,15 @@
 .owl-theme .owl-dots .owl-dot.active span {
     background-color: #10203A; /* Цвет активной точки */
 }
+.slick-carousel4 {
+    display: flex;
+    flex-direction: column; /* Располагает элементы вертикально */
+}
+.slick-carousel4 .slick-slide {
+    display: block; /* Или display: flex; */
+    height: 34px;
+}
+.slick-carousel4 .slick-track{
+    display: flex;
+    flex-direction: column;
+}

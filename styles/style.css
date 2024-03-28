@@ -22,3 +22,32 @@
         transform: rotate(360deg); /* Конечный угол поворота 360 градусов */
     }
 }
+#firstAnimated{
+    left: 0;
+    top: 34px;
+    transition: all ease 0.5s;
+}
+#secondAnimated{
+    left: 0;
+    top: 34px;
+    transition: all ease 0.5s;
+}
+#thirdAnimated{
+    left: 0;
+    top: 34px;
+    transition: all ease 0.5s;
+}
+#fourthAnimated{
+    left: 0;
+    top: 26px;
+    transition: all ease 0.5s;
+}
+#fifthAnimated{
+    left: 0;
+    top: 26px;
+    transition: all ease 0.5s;
+}
+#greenAnimated{
+    left: -100%;
+    transition: all ease 0.5s;
+}
