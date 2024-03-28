@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
     "use strict";
     let modalDialog = document.getElementById('modalDialog');
     let modal = document.getElementById('modal');
-    let openModalButton1 = document.getElementById('openModalButton1');
     let openModalButton2 = document.getElementById('openModalButton2');
     let openModalButton3 = document.getElementById('openModalButton3');
     let openModalButton4 = document.getElementById('openModalButton4');
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let openModalButton6 = document.getElementById('openModalButton6');
     let openModalButton7 = document.getElementById('openModalButton7');
     let closeModalButton = document.getElementById('closeModal');
-    let openModalButtons = [openModalButton1, openModalButton2, openModalButton3, openModalButton4, openModalButton5, openModalButton6, openModalButton7];
+    let openModalButtons = [openModalButton2, openModalButton3, openModalButton4, openModalButton5, openModalButton6, openModalButton7];
     
 
     function openModal(){
