@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function(){
     let fifth = document.getElementById('fifthAnimated');
     let greenMark = document.getElementById('greenAnimated');
     
+    var video = document.getElementById('video');
+    video.play();
+
+    
+    
     setTimeout(function(){
         first.style.top = '0';
     }, 5200);
