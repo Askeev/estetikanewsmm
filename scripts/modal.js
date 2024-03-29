@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     "use strict";
+    let contentBlock = document.getElementById('content');
     let modalDialog = document.getElementById('modalDialog');
     let modal = document.getElementById('modal');
     let openModalButton2 = document.getElementById('openModalButton2');
@@ -9,11 +10,13 @@ document.addEventListener('DOMContentLoaded', function(){
     let openModalButton6 = document.getElementById('openModalButton6');
     let openModalButton7 = document.getElementById('openModalButton7');
     let closeModalButton = document.getElementById('closeModal');
+    let sendForm = document.getElementById('sendForm');
     let openModalButtons = [openModalButton2, openModalButton3, openModalButton4, openModalButton5, openModalButton6, openModalButton7];
     
 
     function openModal(){
-        modal.style.display = 'flex'
+        modal.style.display = 'flex';
+        contentBlock.style.filter ='blur(4px)';
         setTimeout(function(){
             modalDialog.style.height = '80%';
         }, 200);
@@ -21,8 +24,9 @@ document.addEventListener('DOMContentLoaded', function(){
     function closeModal(){
         if (event.target === modal || event.target ===closeModalButton) {
             modalDialog.style.height = '0';
+            contentBlock.style.filter ='none';
             setTimeout(function(){
-                modal.style.display = 'none';;
+                modal.style.display = 'none';
             }, 500);
         }
     }
@@ -33,4 +37,6 @@ document.addEventListener('DOMContentLoaded', function(){
     closeModalButton.addEventListener('click', closeModal)
     
     
+
+    sendForm.addEventListener('click', ()=>window.location.href = "./thanks.html")
 })

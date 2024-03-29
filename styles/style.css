@@ -59,3 +59,48 @@
 #modalDialog{
     transition: all ease 0.5s;
 }
+
+
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-container input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Стили для круглых кнопок */
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.radio-button::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Стили для выбранной радиокнопки */
+.radio-container input[type="radio"]:checked + .radio-button::after {
+    transform: translate(-50%, -50%) scale(1);
+}
