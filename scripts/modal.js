@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', function(){
     function openModal(){
         modal.style.display = 'flex'
         setTimeout(function(){
-            modalDialog.style.height = '50%';
+            modalDialog.style.height = '80%';
         }, 200);
     }
     function closeModal(){
-        if (event.target === modal || event.target ===closeModal) {
+        if (event.target === modal || event.target ===closeModalButton) {
             modalDialog.style.height = '0';
             setTimeout(function(){
                 modal.style.display = 'none';;
