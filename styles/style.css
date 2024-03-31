@@ -110,3 +110,9 @@
 .playButton{
     background-color: rgba(252, 252, 252, 0.56);
 }
+.z-60{
+    z-index: 6;
+}
+.z-70{
+    z-index: 7;
+}

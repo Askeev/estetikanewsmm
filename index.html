@@ -19,6 +19,32 @@
 
 </head>
 <body class="flex flex-col text-[#10203A]">
+    <!-- stories -->
+<div id="stories" class="fixed top-0 bottom-0 right-0 left-0 bg-black z-50 hidden flex-col justify-end">
+    <div class="relative">
+        <video id="storieVideo" playsinline class="relative rounded-t-[8px] w-full h-full object-cover">
+            <source src="" type="video/mp4">
+            <!-- Ваш резервный текст, который отображается, если браузер не поддерживает HTML5 видео -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute top-0 left-0 right-0 bottom-0 z-70 flex flex-col gap-4 pt-2 px-4">
+            <div id="storiesLine" class="flex gap-2">
+            </div>
+            <div id="closeStorieButton" class="self-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M12.8334 1.16675L1.16669 12.8334M1.16669 1.16675L12.8334 12.8334" stroke="#10203A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 right-0 bottom-0 flex z-70 mt-12">
+            <div id="prevStorie" class="w-full h-full "></div>
+            <div id="nextStorie" class="w-full h-full "></div>
+        </div>
+    </div>
+    
+    
+</div>
+    <!-- stories -->
     <!-- video -->
 <div id="video21" class="fixed top-0 bottom-0 right-0 left-0 px-5 py-24 bg-black justify-center items-center hidden z-50">
     <video id="videoFor21" controls playsinline class="w-full h-full object-cover">
@@ -440,7 +466,7 @@
             </div>
         </div>
         <div class="flex gap-2">
-            <button class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
+            <button id="neurButton" class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                     <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#1C1C29"/>
                 </svg>
@@ -478,7 +504,7 @@
             </div>
         </div>
         <div class="flex gap-2">
-            <button class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
+            <button id="kenButton" class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                     <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#1C1C29"/>
                 </svg>
@@ -516,7 +542,7 @@
             </div>
         </div>
         <div class="flex gap-2">
-            <button class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
+            <button id="imunButton" class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                     <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#1C1C29"/>
                 </svg>
@@ -554,7 +580,7 @@
             </div>
         </div>
         <div class="flex gap-2">
-            <button class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
+            <button id="visaButton" class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px] w-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                     <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#1C1C29"/>
                 </svg>
@@ -1067,6 +1093,7 @@
 
 
 
+    <script src="./scripts/stories.js"></script>
     <script src="./scripts/videoCases.js"></script>
     <script src="./scripts/modal.js"></script>
     <script src="./scripts/blockAnimation.js"></script>
