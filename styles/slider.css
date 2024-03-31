@@ -21,3 +21,16 @@
     display: flex;
     flex-direction: column;
 }
+.owl-dots { /* Размер шрифта для точек */
+    margin-top: 20px; /* Расстояние между точками и каруселью */
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 0 6px; /* Расстояние между точками */
+    width: 4px !important; /* Ширина точки */
+    height: 4px !important; /* Высота точки */
+}
+
+.owl-dot span {
+    display: none; /* Скрыть текст внутри точек */
+}
