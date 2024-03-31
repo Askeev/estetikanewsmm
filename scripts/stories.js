@@ -60,6 +60,19 @@ document.addEventListener('DOMContentLoaded', function(){
                 }
                 
             })
+            storieVideo.addEventListener('ended', function(){
+                index++;
+                if(index > storieButtons[y].links.length-1){
+                    stories.style.display = 'none';
+                    storieVideo.pause();
+                    index = 0;
+                }
+                else{
+                    storieVideo.src = storieButtons[y].links[index];
+                    storieVideo.play();
+                    console.log('ghgh');
+                }
+            })
             prevStorie.addEventListener('click', function(){
                 index--;
                 if(index < 0){
