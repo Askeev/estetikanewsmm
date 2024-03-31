@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+    "use strict";
     let first = document.getElementById('firstAnimated');
     let second = document.getElementById('secondAnimated');
     let third = document.getElementById('thirdAnimated');
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var myVideo4 = document.getElementById("video4");
     var myVideo5 = document.getElementById("video5");
     var myVideo6 = document.getElementById("video6");
+    let openMenuButton = document.getElementById('openMenuButton');
     if (myVideo) {
         myVideo.muted = true; // Извините, аудиофилы, но видео нужно замутить для обеспечения автозапуска!
         myVideo.play();

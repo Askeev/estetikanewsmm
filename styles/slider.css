@@ -4,7 +4,6 @@
     align-items: center/* Пример: фон .slick-track */
 }
 .owl-carousel .owl-item img {
-    width: 90%;
     height: auto; /* Поддержка соотношения сторон */
 }
 .owl-theme .owl-dots .owl-dot.active span {
