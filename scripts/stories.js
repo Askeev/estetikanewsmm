@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function(){
             nextStorie.addEventListener('click', function(){
                 index++;
                 if(index > storieButtons[y].links.length-1){
+                    index = 0;
                     stories.style.display = 'none';
                     storieVideo.pause();
-                    index = 0;
                 }
                 else{
                     storieVideo.src = storieButtons[y].links[index];
