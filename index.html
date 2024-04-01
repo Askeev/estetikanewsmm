@@ -19,6 +19,15 @@
 
 </head>
 <body class="flex flex-col text-[#10203A]">
+    <!-- showreel -->
+    <div id="showReel" class="fixed top-0 bottom-0 right-0 left-0 px-5 py-24 bg-black justify-center items-center hidden z-50">
+        <video id="showReelVideo" controls playsinline class="">
+            <source id="source" src="./videos/showreel-full.mp4" type="video/mp4">
+            <!-- Ваш резервный текст, который отображается, если браузер не поддерживает HTML5 видео -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- showreel -->
     <!-- stories -->
 <div id="stories" class="fixed top-0 bottom-0 right-0 left-0 bg-black z-50 hidden flex-col justify-end">
     <div class="relative h-[80%]">
@@ -188,9 +197,9 @@
     </header>
 <!--    forVideo-->
     <div class="mt-5 relative">
-        <video src="./videos/showreel-autoplay-VREMENNO.mp4" id="video1" autoplay muted loop playsinline>
+        <video src="./videos/showreel-short.mp4" id="video1" autoplay muted loop playsinline>
         </video>
-        <button id="" class="absolute right-5 bottom-5 flex items-center gap-[10px] bg-white rounded-[8px] py-2 px-3">
+        <button id="showReelButton" class="absolute right-5 bottom-5 flex items-center gap-[10px] bg-white rounded-[8px] py-2 px-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                 <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#10203A"/>
             </svg>
