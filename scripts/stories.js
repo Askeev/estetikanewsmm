@@ -44,14 +44,17 @@ document.addEventListener('DOMContentLoaded', function(){
             }
             storiesLine.innerHTML = line; // Устанавливаем содержимое storiesLine равным значению переменной line
             stories.style.display = 'flex';
+            setTimeout(function(){
+                stories.style.opacity = '1';
+            }, 100)
             storieVideo.src = storieButtons[y].links[index];
             storieVideo.play();
             nextStorie.addEventListener('click', function(){
                 index++;
                 if(index > storieButtons[y].links.length-1){
                     index = 0;
-                    stories.style.display = 'none';
-                    storieVideo.pause();
+                    storieVideo.src = storieButtons[y].links[index];
+                    storieVideo.play();
                 }
                 else{
                     storieVideo.src = storieButtons[y].links[index];
@@ -96,7 +99,11 @@ document.addEventListener('DOMContentLoaded', function(){
         
     })
     closeStorieButton.addEventListener('click', function(){
-        stories.style.display = 'none';
+        stories.style.opacity ='0';
+        setTimeout(function(){
+           stories.style.display = 'none'; 
+        },700)
+        
         storieVideo.pause();
     })
 

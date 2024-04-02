@@ -30,8 +30,8 @@
     <!-- showreel -->
     <!-- stories -->
 <div id="stories" class="fixed top-0 bottom-0 right-0 left-0 bg-black z-50 hidden flex-col justify-end">
-    <div class="relative h-[80%]">
-        <video id="storieVideo" playsinline class="relative rounded-t-[8px] w-full h-full object-cover">
+    <div class="relative h-full">
+        <video id="storieVideo" playsinline class="relative w-full h-full object-cover">
             <source src="" type="video/mp4">
             <!-- Ваш резервный текст, который отображается, если браузер не поддерживает HTML5 видео -->
             Your browser does not support the video tag.
@@ -45,9 +45,31 @@
                 </svg>
             </div>
         </div>
-        <div class="absolute top-0 left-0 right-0 bottom-0 flex z-70 mt-12">
-            <div id="prevStorie" class="w-full h-full "></div>
-            <div id="nextStorie" class="w-full h-full "></div>
+        <div class="absolute top-0 left-0 right-0 bottom-0 flex z-70 mt-16">
+            <div  class="w-full h-full flex justify-start items-center">
+                <button id="prevStorie" class="sliceButton">
+                    <svg fill="#000000" height="40px" width="40px" version="1.1" id="XMLID_54_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 24 24" xml:space="preserve">
+                    <g id="previous">
+                        <g>
+                            <polygon points="17.2,23.7 5.4,12 17.2,0.3 18.5,1.7 8.4,12 18.5,22.3 		"/>
+                        </g>
+                    </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full h-full flex justify-end items-center">
+                <button  id="nextStorie" class="sliceButton">
+                    <svg fill="#000000" height="40px" width="40px" version="1.1" id="XMLID_287_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 24 24" xml:space="preserve">
+                    <g id="next">
+                        <g>
+                            <polygon points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 		"/>
+                        </g>
+                    </g>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
     
@@ -530,7 +552,7 @@
             </div>
         </div>
         <div class="flex gap-2">
-            <button id="neurButton" class="flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px]">
+            <button id="neurButton" class="open-fancybox1 flex items-center justify-center gap-[10px] px-3 py-[10px] bg-[#BEFF54] rounded-[8px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                     <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#1C1C29"/>
                 </svg>
@@ -1158,9 +1180,12 @@
         </div>
     </div>
     <p class="my-6 jbMono text-[11px] uppercase mx-4">Estetika FCM Agency © 2024</p>
+    
 
 
 
+    
+    
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/stories.js"></script>
     <script src="./scripts/videoCases.js"></script>
@@ -1171,7 +1196,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 
+    
     <script type="text/javascript">
         $(document).ready(function(){
             $('.slick-carousel').slick({
@@ -1252,5 +1279,6 @@
             $('#phone').mask('+7 (999) 999-99-99');
         });
     </script>
+    
 </div>
 </body>

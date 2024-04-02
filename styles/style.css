@@ -116,6 +116,9 @@
 .z-70{
     z-index: 7;
 }
+.z-80{
+    z-index: 8;
+}
 .pb-10{
     padding-bottom: 40px;
 }
@@ -124,5 +127,19 @@
 }
 #menu{
     transition: all ease 0.3s;
+    opacity: 0;
+}
+#closeStorieButton{
+    background-color: rgba(252, 252, 252, 0.56);
+    padding: 12px;
+    border-radius: 8px;
+}
+.sliceButton{
+    background-color: rgba(252, 252, 252, 0.56);
+    padding: 12px;
+    border-radius: 8px;
+}
+#stories{
+    transition: all ease 0.7s;
     opacity: 0;
 }
