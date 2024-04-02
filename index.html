@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/imgs/Favicon.ico">
-    <title>Title</title>
+    <title>Estetika Ads</title>
     <style>
         @import "styles/owl.carousel.min.css";
         @import "styles/owl.theme.default.min.css";
@@ -17,8 +17,18 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="styles/slider.css">
 
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./scripts/email.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/loader.css">
 </head>
 <body class="flex flex-col text-[#10203A]">
+
+    <!-- Loader -->
+    <section id="global-loader">
+        <div id="global-loader-content"></div>
+    </section>
+    <!-- Loader -->
+
     <!-- showreel -->
     <div id="showReel" class="fixed top-0 bottom-0 right-0 left-0 px-5 py-24 bg-black justify-center items-center hidden z-50">
         <video id="showReelVideo" controls playsinline class="">
@@ -146,7 +156,7 @@
     <!-- menu -->
     <!-- modalDialog -->
 <div id="modal" class="hidden fixed top-0 left-0 right-0 bottom-0 bg-[#00000080] z-50 flex-col justify-end">
-    <div id="modalDialog" class="bg-white h-0 w-full flex flex-col px-5 pt-3 pb-5">
+    <form id="modalDialog" class="bg-white h-0 w-full flex flex-col px-5 pt-3 pb-5">
         <div class="bg-[#10203A] h-1 w-12 self-center opacity-20 rounded-md"></div>
         <div class="mt-6 flex justify-between items-center">
             <h2 class="cofo text-[20px] uppercase ">Оставьте заявку</h2>
@@ -157,21 +167,21 @@
         <p class="aenikPro text-[14px] mt-4">Наш менеджер ответит на все вопросы, подберет лучшее решение для вас.</p>
         <div class="mt-8 py-2 flex flex-col gap-2">
             <p class="jbMono text-[10px] uppercase opacity-50">Номер телефона</p>
-            <input type="number" id="phone" class="border-b-[1px] aenikPro text-[28px] focus:border-b-[#181F29] focus:outline-none" placeholder="+7 xxx xxx xx xx">
+            <input type="text" id="phone" name="phone" class="border-b-[1px] aenikPro text-[28px] focus:border-b-[#181F29] focus:outline-none" placeholder="+7 xxx xxx xx xx">
         </div>
         <div class="flex flex-col mt-6 gap-2">
             <p class="jbMono text-[10px] uppercase opacity-50">Как с вами связаться</p>
             <div class="flex gap-4">
                 <div class="radio-container">
-                    <input type="radio" id="phone" name="contact-method" checked>
-                    <label class="radio-button " for="phone"></label>
-                    <label class="radio-label aenikPro text-[13px]" for="phone">По телефону</label>
+                    <input type="radio" id="contact-method-phone" name="contact-method" value="phone" checked>
+                    <label class="radio-button " for="contact-method-phone"></label>
+                    <label class="radio-label aenikPro text-[13px]" for="contact-method-phone">По телефону</label>
                 </div>
             
                 <div class="radio-container">
-                    <input type="radio" id="messenger" name="contact-method">
-                    <label class="radio-button" for="messenger"></label>
-                    <label class="radio-label aenikPro text-[13px]" for="messenger">В мессенджере</label>
+                    <input type="radio" id="contact-method-messenger" name="contact-method" value="messenger">
+                    <label class="radio-button" for="contact-method-messenger"></label>
+                    <label class="radio-label aenikPro text-[13px]" for="contact-method-messenger">В мессенджере</label>
                 </div>
             </div>
         </div>
@@ -210,7 +220,7 @@
             </a>
         </div>
 
-    </div>
+    </form>
 </div>
     <!-- modalDialog -->
     <!-- loader -->
@@ -1180,8 +1190,6 @@
         </div>
     </div>
     <p class="my-6 jbMono text-[11px] uppercase mx-4">Estetika FCM Agency © 2024</p>
-    
-
 
 
     
@@ -1201,6 +1209,13 @@
     
     <script type="text/javascript">
         $(document).ready(function(){
+            IMask(
+            document.getElementById('phone'),
+            {
+                mask: '+{7} (700) 000-00-00'
+            }
+        )
+
             $('.slick-carousel').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
