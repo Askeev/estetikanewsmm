@@ -27,23 +27,23 @@ document.addEventListener('DOMContentLoaded', function(){
     
     setTimeout(function(){
         first.style.top = '0';
-    }, 5200);
+    }, 4500);
     setTimeout(function(){
         second.style.top = '0';
-    }, 5300);
+    }, 4600);
     setTimeout(function(){
         third.style.top = '0';
-    }, 5400);
+    }, 4700);
     setTimeout(function(){
         fourth.style.top = '0';
-    }, 5600);
+    }, 4900);
     setTimeout(function(){
         fifth.style.top = '0';
-    }, 5800);
+    }, 5100);
     setTimeout(function(){
         fifth.style.top = '0';
-    }, 6000);
+    }, 5300);
     setTimeout(function(){
         greenMark.style.left = '0';
-    }, 6500);
+    }, 5800);
 })

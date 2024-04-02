@@ -6,9 +6,34 @@
 .owl-carousel .owl-item img {
     height: auto; /* Поддержка соотношения сторон */
 }
+
 .owl-theme .owl-dots .owl-dot.active span {
     background-color: #10203A; /* Цвет активной точки */
 }
+.team .owl-item.active.center {
+    width: 248px !important; /* Ширина активного центрального элемента */
+}
+
+.team .owl-item.active.center .mx-4.flex.flex-col {
+    width: 248px; /* Ширина внутреннего контейнера */
+}
+.wall .owl-item.active.center {
+    width: 240px !important; /* Ширина активного центрального элемента */
+}
+
+.wall .owl-item.active.center .mx-4.flex.flex-col {
+    width: 240px; /* Ширина внутреннего контейнера */
+}
+
+.slick-carousel .slick-slide{
+    width: fit-content !important;
+    margin-left: 48px;
+}
+.slick-carousel2 .slick-slide{
+    width: fit-content !important;
+}
+
+
 .slick-carousel4 {
     display: flex;
     flex-direction: column; /* Располагает элементы вертикально */

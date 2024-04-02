@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
         modal.style.display = 'flex';
         contentBlock.style.filter ='blur(4px)';
         setTimeout(function(){
-            modalDialog.style.height = '90%';
+            modalDialog.style.height = 'fit-content';
         }, 200);
     }
     function closeModal(){
