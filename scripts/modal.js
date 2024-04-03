@@ -38,5 +38,5 @@ document.addEventListener('DOMContentLoaded', function(){
     
     
 
-    sendForm.addEventListener('click', ()=>window.location.href = "./thanks.html")
+    // sendForm.addEventListener('click', ()=>window.location.href = "./thanks.html")
 })

@@ -17,6 +17,9 @@
 .team .owl-item.active.center .mx-4.flex.flex-col {
     width: 248px; /* Ширина внутреннего контейнера */
 }
+.team .owl-stage{
+    padding-left: 16px;
+}
 .wall .owl-item.active.center {
     width: 240px !important; /* Ширина активного центрального элемента */
 }
