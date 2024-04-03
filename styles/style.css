@@ -129,15 +129,20 @@
     transition: all ease 0.3s;
     opacity: 0;
 }
-#closeStorieButton{
+#closeStorieButton, #closeAdsButton{
     background-color: rgba(252, 252, 252, 0.56);
     padding: 12px;
 }
+
 .sliceButton{
     background-color: rgba(252, 252, 252, 0.56);
     padding: 12px;
 }
 #stories{
+    transition: all ease 0.7s;
+    opacity: 0;
+}
+#adsManager{
     transition: all ease 0.7s;
     opacity: 0;
 }
