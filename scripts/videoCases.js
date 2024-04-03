@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded',
     let closeShowReel = document.getElementById('closeShowReel');
     let video1 = document.getElementById('video21');
     let videoFor1 = document.getElementById('videoFor21');
+    let closeVideoButton = document.getElementById('closeVideoButton');
     let buttons = [
         {
             'button':videoButton1,
@@ -66,6 +67,10 @@ document.addEventListener('DOMContentLoaded',
             videoFor1.pause();
             video1.style.display = 'none';
         }
+    })
+    closeVideoButton.addEventListener('click', function(){
+        videoFor1.pause();
+        video1.style.display = 'none';
     })
     showReelButton.addEventListener('click', function(){
         showReel.style.display = 'flex';

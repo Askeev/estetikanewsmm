@@ -129,7 +129,7 @@
     transition: all ease 0.3s;
     opacity: 0;
 }
-#closeStorieButton, #closeAdsButton{
+#closeStorieButton, #closeAdsButton, #closeVideoButton{
     background-color: rgba(252, 252, 252, 0.56);
     padding: 12px;
 }

@@ -112,11 +112,21 @@
     <!-- adsMeneger -->
     <!-- video -->
 <div id="video21" class="fixed top-0 bottom-0 right-0 left-0 px-5 py-24 bg-black justify-center items-center hidden z-50">
+
     <video id="videoFor21" controls playsinline class="w-full h-full object-cover">
         <source id="source" src="" type="video/mp4">
         <!-- Ваш резервный текст, который отображается, если браузер не поддерживает HTML5 видео -->
         Your browser does not support the video tag.
     </video>
+    <div class="absolute top-0 left-0 right-0 z-70 flex flex-col gap-4 pt-2 px-4">
+        <div id="storiesLine" class="flex gap-2">
+        </div>
+        <div id="closeVideoButton" class="self-end rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M15.8334 4.16675L4.16669 15.8334M4.16669 4.16675L15.8334 15.8334" stroke="#FCFCFC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
 </div>
     <!-- video -->
     <!-- menu -->
@@ -191,7 +201,7 @@
         <p class="aenikPro text-[14px] mt-4">Наш менеджер ответит на все вопросы, подберет лучшее решение для вас.</p>
         <div class="mt-8 py-2 flex flex-col gap-2">
             <p class="jbMono text-[10px] uppercase opacity-50">Номер телефона</p>
-            <input type="text" id="phone" name="phone" class="border-b-[1px] aenikPro text-[28px] focus:border-b-[#181F29] focus:outline-none" placeholder="+7 xxx xxx xx xx">
+            <input type="number" id="phone" name="phone" class="border-b-[1px] aenikPro text-[28px] focus:border-b-[#181F29] focus:outline-none" placeholder="+7 xxx xxx xx xx">
         </div>
         <div class="flex flex-col mt-6 gap-2">
             <p class="jbMono text-[10px] uppercase opacity-50">Как с вами связаться</p>
@@ -757,11 +767,11 @@
         </div>
     </div>
     <div class="slick-carousel2 py-6">
-        <div class="jbMono text-[12px] uppercase opacity-50">НАШИ УСЛУГИ *</div>
-        <div class="jbMono text-[12px] uppercase opacity-50">Our services *</div>
-        <div class="jbMono text-[12px] uppercase opacity-50">Біздің қызметтеріміз *</div>
-        <div class="jbMono text-[12px] uppercase opacity-50">НАШИ УСЛУГИ *</div>
-        <div class="jbMono text-[12px] uppercase opacity-50">OUR SOLTIONS *</div>
+        <div class="jbMono text-[12px] uppercase opacity-50"><span class="opacity-0">f</span>НАШИ УСЛУГИ *</div>
+        <div class="jbMono text-[12px] uppercase opacity-50"><span class="opacity-0">f</span>Our services *</div>
+        <div class="jbMono text-[12px] uppercase opacity-50"><span class="opacity-0">f</span>Біздің қызметтеріміз *</div>
+        <div class="jbMono text-[12px] uppercase opacity-50"><span class="opacity-0">f</span>НАШИ УСЛУГИ *</div>
+        <div class="jbMono text-[12px] uppercase opacity-50"><span class="opacity-0">f</span>OUR SOLTIONS *</div>
     </div>
     <a name="ourHelp"></a>
     <div class="flex flex-col gap-6 px-4 py-10 border-t-[1px]">
@@ -1246,7 +1256,7 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 0, // Скорость автовоспроизведения в миллисекундах
-                speed: 2000,
+                speed: 1000,
                 arrows: false,
                 pauseOnHover: false,
                 cssEase: 'linear'
