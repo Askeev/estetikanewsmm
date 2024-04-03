@@ -785,6 +785,14 @@ video {
   height: 240px;
 }
 
+.h-\[336px\] {
+  height: 336px;
+}
+
+.h-\[394px\] {
+  height: 394px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -835,6 +843,10 @@ video {
 
 .w-\[48px\] {
   width: 48px;
+}
+
+.w-\[240px\] {
+  width: 240px;
 }
 
 .transform {

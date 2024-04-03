@@ -13,20 +13,20 @@
 .team .owl-item.active.center {
     width: 248px !important; /* Ширина активного центрального элемента */
 }
+.team .owl-stage-outer{
+    height: 394px !important;
+}
+.wall .owl-stage-outer{
+    height: 240px !important;
+}
 
 .team .owl-item.active.center .mx-4.flex.flex-col {
     width: 248px; /* Ширина внутреннего контейнера */
 }
-.team .owl-stage{
+.owl-stage{
     padding-left: 16px;
 }
-.wall .owl-item.active.center {
-    width: 240px !important; /* Ширина активного центрального элемента */
-}
 
-.wall .owl-item.active.center .mx-4.flex.flex-col {
-    width: 240px; /* Ширина внутреннего контейнера */
-}
 
 .slick-carousel .slick-slide{
     width: fit-content !important;
