@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function(){
             storieVideo.addEventListener('ended', function(){
                 index++;
                 if(index > storieButtons[y].links.length-1){
-                    stories.style.display = 'none';
-                    storieVideo.pause();
                     index = 0;
+                    storieVideo.src = storieButtons[y].links[index];
+                    storieVideo.play();
                 }
                 else{
                     storieVideo.src = storieButtons[y].links[index];
