@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let numberOfStorie = document.getElementById('numberOfStorie');
     let amountOfStorie = document.getElementById('amountOfStorie');
     let varLines = document.getElementById('varLines');
-    let neurLinks = ['./videos/нейр сж 4.mp4','./videos/нейр сж 7.mp4','./videos/neur1.mp4', './videos/нейр сж 6.mp4'];
+    let neurLinks = ['./videos/neur.mp4','./videos/neur2.mp4'];
     let kenLinks = ['./videos/ken1.mp4','./videos/ken2.mp4'];
     let imunLinks = ['./videos/imun1.mp4','./videos/imun2.mp4'];
     let visaLinks = ['./videos/виза сж 2.mp4','./videos/visa2.mp4','./videos/виза сж.mp4'];
