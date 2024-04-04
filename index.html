@@ -20,6 +20,40 @@
     <script src="https://unpkg.com/imask"></script>
     <script src="./scripts/email.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/loader.css">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(96936573, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/96936573" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+ <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '429625186141581');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=429625186141581&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body class="flex flex-col text-[#10203A]">
 
@@ -193,12 +227,12 @@
     <form id="modalDialog" class="bg-white h-0 w-full flex flex-col px-5 pt-3 pb-5">
         <div class="bg-[#10203A] h-1 w-12 self-center opacity-20 rounded-md"></div>
         <div class="mt-6 flex justify-between items-center">
-            <h2 class="cofo text-[20px] uppercase ">Оставьте заявку</h2>
+            <h2 id="modalTitle" class="cofo text-[20px] uppercase ">Оставьте заявку</h2>
             <svg id="closeModal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M15.8334 4.16675L4.16669 15.8334M4.16669 4.16675L15.8334 15.8334" stroke="#10203A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
-        <p class="aenikPro text-[14px] mt-4">Наш менеджер ответит на все вопросы, подберет лучшее решение для вас.</p>
+        <p id="modalText" class="aenikPro text-[14px] mt-4">Наш менеджер ответит на все вопросы, подберет лучшее решение для вас.</p>
         <div class="mt-8 py-2 flex flex-col gap-2">
             <p class="jbMono text-[10px] uppercase opacity-50">Номер телефона</p>
             <input type="text" inputmode="numeric" id="phone" name="phone" class="border-b-[1px] aenikPro text-[28px] focus:border-b-[#181F29] focus:outline-none" placeholder="+7 xxx xxx xx xx">
@@ -607,7 +641,7 @@
             </button>
         </div>
     </div>
-    <div class="mt-10 px-4 flex flex-col gap-6 border-t-[1px] py-6">
+    <div class="px-4 flex flex-col gap-6 border-t-[1px] py-6">
         <div class="flex flex-col gap-4">
             <div class="flex gap-2 items-center">
                 <img class="w-[36px] h-[36px]" src="imgs/kenfasad.png">
@@ -645,7 +679,7 @@
             </button>
         </div>
     </div>
-    <div class="mt-10 px-4 flex flex-col gap-6 border-y-[1px] py-6">
+    <div class="px-4 flex flex-col gap-6 border-y-[1px] py-6">
         <div class="flex flex-col gap-4">
             <div class="flex gap-2 items-center">
                 <img class="w-[36px] h-[36px]" src="imgs/sic.png">
@@ -721,7 +755,7 @@
             </button>
         </div>
     </div>
-    <div class="flex items-center justify-center gap-2 py-6">
+    <div id="openSecondModal1" class="flex items-center justify-center gap-2 py-6">
         <p class="cofo text-[12px] uppercase">смотреть все проекты</p>
         <svg class="rotating-element" xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
             <g clip-path="url(#clip0_56_974)">
@@ -1022,7 +1056,7 @@
 
         </div>
         <p class="text-[11px] jbMono uppercase">Делаем эффективные продающие посадки, <br>цифровые продукты и e-commercе проекты <br>под ключ.</p>
-        <button class="cofo text-[10px] uppercase py-[10px] px-3 border-[1px] rounded-[8px] self-start">получить презентацию</button>
+        <button id="openSecondModal2" class="cofo text-[10px] uppercase py-[10px] px-3 border-[1px] rounded-[8px] self-start">получить презентацию</button>
     </div>
     <div class="bg-[#181F29] relative overflow-hidden ">
         <div id="openModalButton4" class="relative flex flex-col gap-[88px] px-4 py-8 z-40">
