@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let fourth = document.getElementById('fourthAnimated');
     let fifth = document.getElementById('fifthAnimated');
     let greenMark = document.getElementById('greenAnimated');
+    let greenMark1 = document.getElementById('greenAnimatedSecond')
     var myVideo = document.getElementById("video1");
     var myVideo2 = document.getElementById("video2");
     var myVideo3 = document.getElementById("video3");
@@ -46,4 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
     setTimeout(function(){
         greenMark.style.left = '0';
     }, 5800);
+    setTimeout(function(){
+        greenMark1.style.left = '0';
+    }, 6300);
 })

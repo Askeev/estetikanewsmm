@@ -27,6 +27,12 @@
     padding-left: 16px;
 }
 
+.owl-carousel1 .owl-item.active.center .mx-4.flex.flex-col {
+    width: 200px;
+}
+.owl-carousel1 .owl-dots{
+    margin-top: 24px;
+}
 
 .slick-carousel .slick-slide{
     width: fit-content !important;

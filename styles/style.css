@@ -51,6 +51,14 @@
     left: -100%;
     transition: all ease 0.5s;
 }
+#greenAnimatedSecond{
+    left: -100%;
+    transition: all ease 1s;
+    width: 290px;
+}
+#fiveAnimated{
+    left: 0;
+}
 .owl-dots{
     margin-top: 32px;
 }
@@ -145,4 +153,21 @@
 #adsManager{
     transition: all ease 0.7s;
     opacity: 0;
+}
+
+.owl-carousel1 .owl-nav {
+    display: none; /* Скрыть навигацию (стрелки) */
+}
+.owl-carousel1 .owl-stage {
+    display: flex;
+}
+.owl-carousel2 .owl-nav {
+    display: none;
+}
+.owl-carousel2 .owl-dots {
+    margin-top: 32px;
+}
+.owl-carousel2 .owl-stage {
+    display: flex;
+    padding: 0;
 }

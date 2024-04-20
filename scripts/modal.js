@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function(){
     let openModalButton5 = document.getElementById('openModalButton5');
     let openModalButton6 = document.getElementById('openModalButton6');
     let openModalButton7 = document.getElementById('openModalButton7');
+    let openModalButton8 = document.getElementById('openModalButton8');
+    let openModalButton9 = document.getElementById('openModalButton9');
     let closeModalButton = document.getElementById('closeModal');
     let openSecondModal1 = document.getElementById('openSecondModal1');
     let modalText = document.getElementById('modalText');
@@ -16,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let openSecondModal2 = document.getElementById('openSecondModal2');
 
     let sendForm = document.getElementById('sendForm');
-    let openModalButtons = [openModalButton2, openModalButton3, openModalButton4, openModalButton5, openModalButton6, openModalButton7];
+    let openModalButtons = [openModalButton2, openModalButton3, openModalButton4, openModalButton5, openModalButton6, openModalButton7, openModalButton8, openModalButton9,];
 
     function openModal(){
         modal.style.display = 'flex';
@@ -25,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
             modalDialog.style.height = 'fit-content';
         }, 200);
     }
-    function closeModal(){
-        if (event.target === modal || event.target ===closeModalButton) {
+    function closeModal(event){
+        if (event.target === modal || event.target === closeModalButton) {
             modalDialog.style.height = '0';
             contentBlock.style.filter ='none';
             setTimeout(function(){
