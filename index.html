@@ -79,59 +79,16 @@ src="https://www.facebook.com/tr?id=429625186141581&ev=PageView&noscript=1"
     </div>
     <!-- showreel -->
 
-    <div id="story">
-        <div class="">
-            <video id="storyVideo">
-
-            </video>
-            <div>
-                <div id="storyes">
-                    
-                </div>
-                <div id="storyesLIne">
-
-                </div>
-                <div id="closeStoryeButton">
-
-                </div>
-            </div>
-            <div>
-                <div>
-                    <button id="prevStorye">
-
-                    </button>
-                </div>
-                <div>
-                    <button id="nextStorye">
-
-                    </button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <span id="numberOfStorye"></span><span id="amoutOfStorye"></span>
-                </div>
-                <div id="varLynes">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- stories -->
 <div id="stories" class="fixed top-0 bottom-0 right-0 left-0 bg-black z-50 hidden flex-col justify-end">
-    <div class="relative h-full">
-        <video id="storieVideo" playsinline class="relative w-full h-full object-cover">
-            <source src="" type="video/mp4">
-            <!-- Ваш резервный текст, который отображается, если браузер не поддерживает HTML5 видео -->
-            Your browser does not support the video tag.
-        </video>
+    <img id="storiesImages" src="./imgs/" class="relative w-full h-full" alt="Story Image">
+    
         <div class="absolute top-0 left-0 right-0 z-70 flex flex-col gap-4 pt-2 px-4">
             <div id="storiesLine" class="flex gap-2">
             </div>
             <div id="closeStorieButton" class="self-end rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M15.8334 4.16675L4.16669 15.8334M4.16669 4.16675L15.8334 15.8334" stroke="#FCFCFC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.8334 4.16675L4.16669 15.8334M4.16669 4.16675L15.8334 15.8334" stroke="#000" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
         </div>
@@ -139,14 +96,14 @@ src="https://www.facebook.com/tr?id=429625186141581&ev=PageView&noscript=1"
             <div  class="w-full h-full flex justify-start items-center">
                 <button id="prevStorie" class="sliceButton rounded-full ml-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#FCFCFC" stroke-width="1.68" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#000" stroke-width="1.68" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
             </div>
             <div class="w-full h-full flex justify-end items-center">
                 <button  id="nextStorie" class="sliceButton rounded-full mr-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#FCFCFC" stroke-width="1.68" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#000" stroke-width="1.68" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
             </div>
@@ -616,7 +573,7 @@ src="https://www.facebook.com/tr?id=429625186141581&ev=PageView&noscript=1"
                         </p>
                     </div>
                     <div class="flex px-[10px] bg-[#BEFF54] rounded-lg gap-4">
-                        <button class="flex gap-2 items-center justify-center cofo uppercase h-8 text-[10px] leading-4">
+                        <button id="neurButton" class="flex gap-2 items-center justify-center cofo uppercase h-8 text-[10px] leading-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
                                 <path d="M11 7L0.499999 13.0622L0.5 0.937822L11 7Z" fill="#10203A"/>
                             </svg>
@@ -647,7 +604,7 @@ src="https://www.facebook.com/tr?id=429625186141581&ev=PageView&noscript=1"
                         </p>
                     </div>
                     <div class="flex px-[10px] bg-[#BEFF54] rounded-lg gap-4">
-                        <button class="flex gap-2 items-center justify-center cofo uppercase h-8 text-[10px] leading-4">
+                        <button id="kenButton" class="flex gap-2 items-center justify-center cofo uppercase h-8 text-[10px] leading-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
                                 <path d="M11 7L0.499999 13.0622L0.5 0.937822L11 7Z" fill="#10203A"/>
                             </svg>
@@ -677,7 +634,7 @@ src="https://www.facebook.com/tr?id=429625186141581&ev=PageView&noscript=1"
                         </p>
                     </div>
                     <div class="flex px-[10px] bg-[#BEFF54] rounded-lg gap-4">
-                        <button class="flex gap-2 items-center justify-center cofo uppercase h-8 text-[10px] leading-4">
+                        <button id="visaButton" class="flex gap-2 items-center justify-center cofo uppercase h-8 text-[10px] leading-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
                                 <path d="M11 7L0.499999 13.0622L0.5 0.937822L11 7Z" fill="#10203A"/>
                             </svg>
@@ -1564,6 +1521,7 @@ src="https://www.facebook.com/tr?id=429625186141581&ev=PageView&noscript=1"
     
     <script src="./scripts/adsManager.js"></script>
     <script src="./scripts/menu.js"></script>
+    <script src="./scripts/story.js"></script>
     <script src="./scripts/stories.js"></script>
     <script src="./scripts/videoCases.js"></script>
     <script src="./scripts/modal.js"></script>

@@ -3,20 +3,20 @@ document.addEventListener('DOMContentLoaded', function(){
     let stories = document.getElementById('stories');
     let neurButton = document.getElementById('neurButton');
     let kenButton = document.getElementById('kenButton');
-    let imunButton = document.getElementById('imunButton');
+    // let imunButton = document.getElementById('imunButton');
     let visaButton = document.getElementById('visaButton');
     let closeStorieButton = document.getElementById('closeStorieButton');
-    let storieVideo = document.getElementById('storieVideo');
+    let storiesImages = document.getElementById('storiesImages');
     let storiesLine = document.getElementById('storiesLine');
     let prevStorie = document.getElementById('prevStorie');
     let nextStorie = document.getElementById('nextStorie');
     let numberOfStorie = document.getElementById('numberOfStorie');
     let amountOfStorie = document.getElementById('amountOfStorie');
     let varLines = document.getElementById('varLines');
-    let neurLinks = ['./videos/neur.mp4','./videos/neur2.mp4'];
-    let kenLinks = ['./videos/ken1.mp4','./videos/ken2.mp4'];
-    let imunLinks = ['./videos/imun1.mp4','./videos/imun2.mp4'];
-    let visaLinks = ['./videos/виза сж 2.mp4','./videos/visa2.mp4','./videos/виза сж.mp4'];
+    let neurLinks = ['./imgs/neurt1.png','./imgs/neurt2.png'];
+    let kenLinks = ['./imgs/keni1.png','./imgs/keni2.png'];
+    // let imunLinks = ['./imgs/imun1.mp4','./imgs/imun2.mp4'];
+    let visaLinks = ['./imgs/visas1.png','./imgs/visas2.png',];
     let storieButtons = [
         {
             'button': neurButton,
@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function(){
             'button': kenButton,
             'links': kenLinks
         },
-        {
-            'button': imunButton,
-            'links': imunLinks
-        },
+        // {
+        //     'button': imunButton,
+        //     'links': imunLinks
+        // },
         {
             'button': visaButton,
             'links': visaLinks
@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function(){
             }, 100)
             numberOfStorie.innerHTML = index+1;
             amountOfStorie.innerHTML = storieButtons[y].links.length;
-            storieVideo.src = storieButtons[y].links[index];
-            storieVideo.play();
+            storiesImages.src = storieButtons[y].links[index];
+            
             nextStorie.addEventListener('click', function(){
                 index++;
                 numberOfStorie.innerHTML = index+1;
@@ -84,17 +84,17 @@ document.addEventListener('DOMContentLoaded', function(){
                             document.getElementById('varLine'+(i+1)).style.backgroundColor = 'rgb(148 163 184)';
                         }
                     }
-                    storieVideo.src = storieButtons[y].links[index];
-                    storieVideo.play();
+                    storiesImages.src = storieButtons[y].links[index];
+                    
                 }
                 else{
-                    storieVideo.src = storieButtons[y].links[index];
-                    storieVideo.play();
+                    storiesImages.src = storieButtons[y].links[index];
+                    
                     console.log('ghgh');
                 }
                 
             })
-            storieVideo.addEventListener('ended', function(){
+            storiesImages.addEventListener('ended', function(){
                 index++;
                 numberOfStorie.innerHTML = index+1;
                 for(let i = 0; i < storieButtons[y].links.length; i++){
@@ -114,12 +114,12 @@ document.addEventListener('DOMContentLoaded', function(){
                             document.getElementById('varLine'+(i+1)).style.backgroundColor = 'rgb(148 163 184)';
                         }
                     }
-                    storieVideo.src = storieButtons[y].links[index];
-                    storieVideo.play();
+                    storiesImages.src = storieButtons[y].links[index];
+                    
                 }
                 else{
-                    storieVideo.src = storieButtons[y].links[index];
-                    storieVideo.play();
+                    storiesImages.src = storieButtons[y].links[index];
+                    
                     console.log('ghgh');
                 }
             })
@@ -145,8 +145,8 @@ document.addEventListener('DOMContentLoaded', function(){
                     }
                 }
                 else{
-                    storieVideo.src = storieButtons[y].links[index];
-                    storieVideo.play();
+                    storiesImages.src = storieButtons[y].links[index];
+                    
                     console.log('ghgh');
                 }
             })
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if(event.target === stories){
             stories.style.display = 'none';
             varLines.innerHTML='';
-            storieVideo.pause();
+            
         }
         
     })
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function(){
            stories.style.display = 'none'; 
         },700)
         varLines.innerHTML='';
-        storieVideo.pause();
+       
     })
 
 })
